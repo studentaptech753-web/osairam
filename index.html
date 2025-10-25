@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarMax Clone - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>CarMax</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Cars</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Dream Car</h2>
+    <input type="text" id="searchBox" placeholder="Search cars...">
+    <button onclick="searchCar()">Search</button>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Cars</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="https://via.placeholder.com/250x150" alt="Car 1">
+        <h3>Honda Civic</h3>
+        <p>$20,000</p>
+        <a href="details.html">View Details</a>
+      </div>
+      <div class="car-card">
+        <img src="https://via.placeholder.com/250x150" alt="Car 2">
+        <h3>Toyota Corolla</h3>
+        <p>$18,500</p>
+        <a href="details.html">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  function searchCar() {
+    let query = document.getElementById("searchBox").value;
+    alert("Searching for: " + query);
+  }</script>
+</body>
+</html>
